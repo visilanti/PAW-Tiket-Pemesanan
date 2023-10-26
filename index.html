@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tiket Pemesanan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins:wght@300&family=Sometype+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                Silvia's Travel
+            </a>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- formulir -->
+    <section class="formulir">
+        <div class="title mb-3">
+            <h3>Pemesanan Tiket Kereta</h3>
+        </div>
+        <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama" placeholder="nama anda">
+        </div>
+        <div class="mb-3">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Tujuan</option>
+                <option value="1">Jakarta</option>
+                <option value="2">Surabaya</option>
+                <option value="3">Bali</option>
+                <option value="4">Bandung</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="harga" class="form-label">Harga</label>
+            <input type="text" class="form-control" id="hargaTiket">
+        </div>
+        <div class="mb-3">
+            <select class="form-select" aria-label="Default select example" id="jumlahTiket">
+                <option selected>Jumlah Tiket</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="member">
+            <label class="form-check-label" for="member">
+                Member
+            </label>
+        </div>
+        <div class="mb-3">
+            <label for="diskon" class="form-label">Diskon</label>
+            <input type="text" class="form-control" id="diskon">
+        </div>
+        <div class="mb-3">
+            <label for="total" class="form-label" placeholder="total bayar">Total</label>
+            <input type="text" class="form-control showTotal" id="totalBayar" readonly>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary" id="hitungButton">Hitung</button>
+        </div>
+    </section>
+    <!-- end formulir -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
